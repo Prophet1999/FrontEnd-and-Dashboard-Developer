@@ -1,0 +1,7 @@
+Thoughts / Probable solutions / Problems faced while designing the solution
+
+1. The Matrix manipulation and handling was tricky and difficult.
+2. There is no way to optimize the operations on the matrix.
+3. Lots of research needed for the algorithm.
+4. Minimum Understanding while playing the game.
+5. Adding the scores and leaderboards was a time taking process.

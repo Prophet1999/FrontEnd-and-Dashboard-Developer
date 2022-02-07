@@ -1,0 +1,24 @@
+In the original game, sometimes the new tile that pops up is a 4. Let's ignore that possibility for the sake of simplicity.
+
+We've 16 squares in total and considering the new tile popped up at the position we chose, to make it to 4096, we need minimum these tiles:
+
+2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 2
+
+These can be combined from right to left to get to 4096. That's a total of 12 tiles. Since that's less than 16 (max number of tiles that can fit), 4096 is possible. Following along:
+
+8192: 4096, 2048, 1024, ..., 4, 2, 2 Total 13
+16384: 8192, 4096, 2048, ..., 4, 2, 2 Total 14
+32768: 16384, 8192, 4096, ..., 4, 2, 2 Total 15
+65536: 32768, 16384, 8192, 4096, ..., 4, 2, 2 Total 16
+Next is 131072 which will require at least 17 tiles which can't fit on the board.
+
+So, the largest possible tile is 65536.
+
+EDIT: Since the game pops up some 4's at times, 131072 is still theoretically possible if the last tile that pops up is a 4 making the board look like this:
+
+131072: 65536, 32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 4
+
+that's 16 tiles in total.
+
+So now we know that 65536 is reachable in 4x4 grid so we just have to modify our result value from 2048 to 4096.
+Whenever we encounter 4096 as a value on any one grid cell after each operation we just exit the program and flash "You Win".

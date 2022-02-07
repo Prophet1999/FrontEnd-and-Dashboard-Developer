@@ -1,0 +1,9 @@
+2048 is a highly popular game even though it's quite old and really simple as compared to other games today.
+2048 looks very easy when you start playing it, but it gets tougher and tougher with time. 
+But this is not the case with 2084 8x8. The game is really easy as you have a bigger board of 8x8 blocks to achieve the target of 2048.
+It is similar to 4x4 grid except the fact that here we have to use 8x8 grid.
+
+
+Difference Between 2048 And 2048 8x8
+
+The classic 2048 game has a 4x4 board. And the user has to make a single tile display 2048 as the final number in order to win the game. 4x4 tiles make the game very hard and you have to think twice before taking the next step. But this is not the case with 2048 8x8. 2048 tile can easily be obtained even if you randomly move the tiles. The reason being, the tiles are four times as compared to what we get in 2048.
