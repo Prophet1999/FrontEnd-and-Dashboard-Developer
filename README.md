@@ -10,9 +10,7 @@
 
 ## Requirements
 * ```Python 3.5```
-* ```Tkinter```
-
- Module for Coding a user-friendly interface as introduced in class. 
+* ```Tkinter``` Module for Coding a user-friendly interface as introduced in class. 
  It contains many function such as create_text(), create_rectangle(), label(), button(), bind_all() that makes the user interface interactive.
 
 
