@@ -43,40 +43,46 @@ In above process you can see the snapshots from graphical user interface of 2048
 Example : 
 
 Commands are as follows : 
-'W' or 'w' : Move Up
-'S' or 's' : Move Down
-'A' or 'a' : Move Left
-'D' or 'd' : Move Right
+'↑' : Move Up
+'↓' : Move Down
+'←' : Move Left
+'→' : Move Right
+
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [0, 0, 2, 0]
-Press the command : a
+Press the command : ←
 GAME NOT OVER
+
 [0, 0, 0, 2]
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [2, 0, 0, 0]
-Press the command : s
+Press the command : ↓
 GAME NOT OVER
+
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [0, 0, 2, 0]
 [2, 0, 0, 2]
-Press the command : d
+Press the command : →
 GAME NOT OVER
+
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [2, 0, 0, 2]
 [0, 0, 0, 4]
-Press the command : a
+Press the command : ←
 GAME NOT OVER
+
 [0, 2, 0, 0]
 [0, 0, 0, 0]
 [4, 0, 0, 0]
 [4, 0, 0, 0]
-Press the command : s
+Press the command : ↓
 GAME NOT OVER
+
 [0, 0, 0, 0]
 [0, 0, 0, 0]
 [0, 0, 0, 0]
