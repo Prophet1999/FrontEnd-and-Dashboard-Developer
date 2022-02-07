@@ -1,4 +1,4 @@
-# 2048
+# 2048 Game
 (Yet another) 2048 game clone developed with Python and TKinter
 
 ## Screenshots
