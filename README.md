@@ -1,5 +1,5 @@
 # 2048
-(Yet another) 2048 game clone developed with Python and Pygame
+(Yet another) 2048 game clone developed with Python and TKinter
 
 ## Screenshots
 
