@@ -1,0 +1,118 @@
+	Overview - 
+this project needs Python fundamentals, the random library and the TKinter for the frontend,
+the user slides tiles around a box either left right up or down 
+everytime the user slides the tiles in a direction such that at least one tile moves,
+a new tile is added to the board every tile has a value on it 
+the smallest value possible is it - if two
+tiles with the same value are slid into
+each other they combine into one tile
+that has double the previous tiles value
+if there are three of the same tiles in
+a row the two farthest in the direction
+of motion will combine and the third
+will stay the same if there are four of
+the same tile in a row they will combine
+in two pairs, the user loses the game
+when the board is full and there are no
+more possible moves, the user wins the
+game when there's the value 2048 on the
+board
+
+	Approach -
+
+
+	Step 1 
+We have to setup the board using a list of lists where we'll want to create a temporary
+
+board for us to practice some of our functions on we can use zeros in our
+
+list to represent blank spaces and the value to represent valued tiles we also
+
+need to create a display function which will print the current board in an
+
+orderly format.
+
+
+	Step 2
+we need to create functions that will merge values left
+
+right up and down we probably will have
+
+to create functions to reverse and
+
+transpose the list of lists to help us
+
+do this
+
+
+	step 3
+we will set up the start of the
+
+game by creating an empty game board
+
+filled with two random tiles with values
+
+two or four.
+
+	step 4
+we can expand on the game and
+
+up rounds where the user will have the
+
+option to merge in different directions
+
+and the new board will display we can
+
+also set up code that will test if a
+
+move was successful or not.
+
+	step 5 
+we can set up adding a
+
+new value to the board each time they
+
+make a successful move
+
+
+	step 6 
+is to set up function to
+
+check if the player has won or lost
+
+
+Hence,
+
+we're going to actually make the board with a list of
+
+lists there will be a list to represent
+
+each row of the board and these lists
+
+will be stored in another list.
+
+
+Implementation Details:
+
+1. Make a merge_one_row_left function by removing all empty spaces between all elements , merging equal pairs and then again shifting all elements to the left in the row.
+
+2. Make a merge_left function by calling merge_one_row_left function for every row in the board.
+
+3. Make a reverse_board function to reverse every row of the board.
+	
+4. Make a merge_right function by calling reverse_board, merge_left and then reverse_board again at the given board.
+
+5. Make a transpose_board function to find the transpose of the board.
+
+6. Make a merge_up function by calling transpose_board, merge_left, and then transpose_board again at the given board.
+
+7. Make a merge_down function by calling transpose_board, merge_right, and then transpose_board again at the given board.
+
+8. Make a is_won function by checking if any value is 2048 in the given board.
+
+9. Make a is_game_over function by copying the current board to a temporary board. If after each of the merge_left, merge_right, merge_up, merge_down operations the temporary board matches to the original board means that there is no moves left hence return true else return false.
+
+10. Make a display function to print the current state of the board.
+
+11. Finally prepare the main function to take valid inputs 'a', 's', 'd' or 'w' and call for merge function accordingly. After each operation, if is_won returns true then print "You Won", call display and exit, else if is_game_over returns true then print "Game Over" call display and exit Otherwise generate a random value using python's randint function in the random library in the current board and call display and continue the loop.
+	
